@@ -1,0 +1,134 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.hoverBox {
+    width: 200px;
+    height: 100px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    text-transform: capitalize;
+    margin: 10px;
+    border-radius: 16px;
+}
+
+.hoverBox:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.topicAreaContainer{
+    display: flex;
+
+}
+
+.createRoomBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.createRoomBtn:hover {
+    background-color: #27ae60;
+}
+.createRoomHeaderContainer{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    width: 100%;
+    background-color: #e4e4e4;
+
+}
+
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background: white;
+    padding: 20px 66px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .popup input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+  }
+  
+  .errorMessage {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .submitButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049;
+  }
+
+  .messageMainPopupContainer {
+    height: 90vh;
+    width: 89%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    filter: drop-shadow(2px 10px 16px black);
+    padding: 10px 50px;
+    border-radius: 10px;
+  }
+  .messageInsideContainer {
+    padding:10px;
+    border: 2px solid #bcb2b2;;
+  }
+  .messageInsideSend {
+    display: flex;
+  }  
+
+  .messageInsideMessage{
+    height: 70vh;
+  }
+  .closeBtn{
+    position: absolute;
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    right: 1%;
+    top: 0%;
+    filter: drop-shadow(2px 4px 6px black);
+    background: wheat;
+    border-radius: 46px;
+    cursor: pointer;
+    padding: 2px 10px;
+  }
